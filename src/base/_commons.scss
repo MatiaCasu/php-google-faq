@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-wrap{
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-box{
+  display: flex;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+ul{
+  list-style: none;
+}
+
+h2,
+p{
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  margin-top: 50px;
+  color: #51594f;
+  font-weight: 500;
+}
