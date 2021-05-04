@@ -1,6 +1,5 @@
 nav.top, nav.bottom{
   padding-inline: 20px;
-  border-bottom: 1px solid lightgrey;
 }
 
 nav.top{
@@ -20,13 +19,17 @@ nav.top{
       font-size: 18px;
       font-weight: 500;
       text-decoration: none;
-      color: #5f6368;
+      color: $clr--text-500;
       margin-left: 5px;
     }
   }
 
   .user{
     align-items: center;
+
+    i{
+      color: $clr--text-500;
+    }
 
     .user-img{
       background-color: #3371cf;
@@ -39,5 +42,21 @@ nav.top{
 }
 
 nav.bottom{
-  min-height: 40px;
+  border-bottom: 1px solid $clr--border-200;
+
+  a{
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    color: $clr--text-500;
+  }
+  li:last-child{
+    border-bottom: $clr--underline-300 2px solid;
+    a{
+      color: $clr--underline-300;
+      margin-right: 0;
+    }
+  }
 }

@@ -17,6 +17,15 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
   //   echo $q."<br>";
   //   echo $answer."<br>";
   // }
+
+  //Nav Database
+  $policyNav= [
+    "Introduzione",
+    "Norme sulla privacy",
+    "Termini di servizio",
+    "Tecnologie",
+    "Domande frequenti",
+  ]
 ?>
 
 
@@ -51,9 +60,13 @@ Gestire il “Database” e la visualizzazione di queste domande e risposte con 
         </nav>
         <nav class="bottom">
           <ul class="flex-box">
-            <li>prova</li>
-            <li>prova</li>
-            <li>prova</li>
+            <?php foreach ($policyNav as $i): ?>
+              <li>
+                <a href="#" class="inline-block">
+                  <?php echo $i; ?>
+                </a>
+              </li>
+            <?php endforeach ?>
           </ul>
         </nav>
       </header>

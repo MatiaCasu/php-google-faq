@@ -28,13 +28,12 @@ p {
 
 h2 {
   margin-top: 50px;
-  color: #51594f;
+  color: #3c4043;
   font-weight: 500;
 }
 
 nav.top, nav.bottom {
   padding-inline: 20px;
-  border-bottom: 1px solid lightgrey;
 }
 
 nav.top {
@@ -59,6 +58,9 @@ nav.top .policy .policy-index {
 nav.top .user {
   align-items: center;
 }
+nav.top .user i {
+  color: #5f6368;
+}
 nav.top .user .user-img {
   background-color: #3371cf;
   border-radius: 100%;
@@ -68,11 +70,33 @@ nav.top .user .user-img {
 }
 
 nav.bottom {
-  min-height: 40px;
+  border-bottom: 1px solid #cccccc;
+}
+nav.bottom a {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 40px;
+  padding-bottom: 10px;
+  color: #5f6368;
+}
+nav.bottom li:last-child {
+  border-bottom: #3367d6 2px solid;
+}
+nav.bottom li:last-child a {
+  color: #3367d6;
+  margin-right: 0;
 }
 
 main {
   max-width: 1020px;
   margin: 0 auto;
   padding: 50px 0;
+}
+main p {
+  font-size: 14px;
+}
+main p a {
+  text-decoration: none;
+  color: #3367d6;
 }
